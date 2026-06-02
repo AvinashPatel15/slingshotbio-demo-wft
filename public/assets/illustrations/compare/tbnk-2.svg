@@ -1,0 +1,29 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_9_1232)">
+<circle cx="30" cy="30" r="30" fill="url(#paint0_radial_9_1232)"/>
+<rect x="29" y="2" width="1" height="56" fill="#F76A00"/>
+<rect x="58" y="31" width="1" height="56" transform="rotate(90 58 31)" fill="#F76A00"/>
+<circle cx="33" cy="27" r="2" fill="#F76A00"/>
+<circle cx="26" cy="28" r="2" fill="#F76A00"/>
+<circle cx="36.5" cy="28.5" r="1.5" fill="#F76A00"/>
+<circle cx="36.5" cy="24.5" r="1.5" fill="#F76A00"/>
+<circle cx="26.5" cy="23.5" r="1.5" fill="#F76A00"/>
+<circle cx="18.5" cy="28.5" r="1.5" fill="#F76A00"/>
+<circle cx="25" cy="37" r="2" fill="#F76A00"/>
+<circle cx="21.5" cy="40.5" r="1.5" fill="#F76A00"/>
+<circle cx="20.5" cy="34.5" r="1.5" fill="#F76A00"/>
+<circle cx="26.5" cy="41.5" r="1.5" fill="#F76A00"/>
+<circle cx="34" cy="36" r="3" fill="#F76A00"/>
+<circle cx="32.5" cy="41.5" r="1.5" fill="#F76A00"/>
+<circle cx="39.5" cy="36.5" r="1.5" fill="#F76A00"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_9_1232" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(30 30) rotate(90) scale(30)">
+<stop stop-color="#F86902" stop-opacity="0.2"/>
+<stop offset="1" stop-color="#F86902" stop-opacity="0"/>
+</radialGradient>
+<clipPath id="clip0_9_1232">
+<rect width="60" height="60" fill="white"/>
+</clipPath>
+</defs>
+</svg>
