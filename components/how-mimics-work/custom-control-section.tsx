@@ -35,7 +35,7 @@ export function CustomControlSection() {
 
             <Link
               href="/sample-request"
-              className="inline-flex min-h-[52px] items-center justify-center rounded-full bg-[#f76a00] hover:bg-[#f86902] px-8 py-4 font-medium text-base text-white shadow-[0_4px_14px_rgba(247,106,0,0.3)] transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98]"
+              className="inline-flex min-h-[52px] items-center justify-center rounded-full bg-[#f76a00] hover:bg-[#f86902] px-4 py-3.5 font-medium text-base text-white shadow-[0_4px_14px_rgba(247,106,0,0.3)] transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98]"
             >
               Build What Assay Needs
             </Link>
@@ -43,52 +43,109 @@ export function CustomControlSection() {
 
           {/* Right Column: Premium Stats Card Container */}
           <div className="lg:col-span-5 flex justify-center lg:justify-end w-full z-10 animate-fade-up-delay-1">
-            <div className="w-full max-w-[450px] rounded-[20px] border border-[#262422] shadow-[0_20px_40px_rgba(0,0,0,0.4)] overflow-hidden">
-              {/* Row 1 */}
-              <div className="p-6 sm:p-8 border-b border-[#262422]">
-                <div className="flex items-baseline justify-between gap-4 mb-2">
-                  <span className="text-[24px] font-heading font-bold text-[#f76a00] tracking-[-1.28px] leading-[28px] shrink-0">
-                    2–4 weeks
-                  </span>
-                  <span className="text-white font-heading font-semibold text-xs xs:text-sm sm:text-[15px] md:text-base leading-[20px] text-right">
-                    Engineering Turnaround
+            <div className="box-border flex flex-col justify-between items-start p-0 mx-auto select-none overflow-hidden w-full max-w-[371px] h-[412px] border-[0.8px] border-[#3D3D3D] rounded-[14px] bg-[#0d0c0c] flex-none order-1 grow-0">
+
+              <div className="flex flex-col justify-center items-center mx-auto w-full py-[28px] px-[24px] max-w-[369.4px] h-[136.8px] border-b-[0.8px] border-[#3D3D3D] flex-none order-0 self-stretch grow">
+
+                <div className="flex flex-col items-start p-0 gap-[12px] w-full max-w-[321.4px] h-[76px] flex-none order-0 self-stretch grow-0">
+
+                  <div className="flex flex-col justify-center items-center p-0 w-full max-w-[321.4px] h-[28px] flex-none order-0 self-stretch grow-0">
+
+                    <div className="flex flex-row justify-between items-center p-0 w-full max-w-[321.4px] h-[28px] flex-none order-0 self-stretch grow-0">
+
+                      <div className="flex flex-col items-start p-0 w-[117px] max-w-full h-[28px] flex-none order-0 grow-0">
+                        <span className="font-heading font-bold text-[#F76A00] w-full h-[28px] text-[24px] leading-[28px] flex items-center tracking-[-1.28px] flex-none order-0 grow-0">
+                          2–4 weeks
+                        </span>
+                      </div>
+
+                      <span className="font-heading font-bold text-white capitalize w-[184px] max-w-full h-[20px] text-[16px] leading-[20px] flex items-end justify-end text-right flex-none order-1 grow-0">
+                        Engineering turnaround
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Description */}
+                  <span className="font-heading font-medium text-[#C6C3C0] w-full max-w-[321.4px] h-[36px] text-[12px] leading-[18px] flex items-center flex-none order-1 self-stretch grow-0">
+                    Skip months of donor sourcing and get assay-ready mimics in weeks.
                   </span>
                 </div>
-                <p className="text-neutral-400 font-sans text-xs leading-[18px]">
-                  Skip months of donor sourcing and get assay-ready mimics in
-                  weeks.
-                </p>
+
+                {/* Hidden Container */}
+                <div className="hidden flex-col items-start pb-[0.565px] w-[321px] h-[40.56px] flex-none order-2 self-stretch grow-0">
+                  <span className="font-sans font-normal w-[321px] h-[40px] text-[14px] leading-[20px] flex items-center text-[rgba(255,255,255,0.28)] flex-none order-0 self-stretch grow-0">
+                    From specification to delivery. Donor cell sourcing takes 3–6 months.
+                  </span>
+                </div>
               </div>
 
-              {/* Row 2 */}
-              <div className="p-6 sm:p-8 border-b border-[#262422]">
-                <div className="flex items-baseline justify-between gap-4 mb-2">
-                  <span className="text-[24px] font-heading font-bold text-[#f76a00] tracking-[-1.28px] leading-[28px] shrink-0">
-                    3 years
-                  </span>
-                  <span className="text-white font-heading font-semibold text-xs xs:text-sm sm:text-[15px] md:text-base leading-[20px] text-right">
-                    Shelf Life, Same Lot
+
+              <div className="flex flex-col justify-center items-center mx-auto w-full py-[28px] px-[24px] max-w-[369.4px] h-[136.8px] border-b-[0.8px] border-[#3D3D3D] flex-none order-1 self-stretch grow">
+
+                <div className="flex flex-col items-start p-0 gap-[12px] w-full max-w-[321.4px] h-[76px] flex-none order-0 self-stretch grow-0">
+
+                  <div className="flex flex-col justify-center items-center p-0 w-full max-w-[321.4px] h-[28px] flex-none order-0 self-stretch grow-0">
+
+                    <div className="flex flex-row justify-between items-center p-0 w-full max-w-[321.4px] h-[28px] flex-none order-0 self-stretch grow-0">
+
+                      <div className="flex flex-col items-start p-0 w-[75px] max-w-full h-[28px] flex-none order-0 grow-0">
+                        <span className="font-heading font-bold text-[#F76A00] w-full h-[28px] text-[24px] leading-[28px] flex items-center tracking-[-1.28px] flex-none order-0 grow-0">
+                          3 years
+                        </span>
+                      </div>
+
+                      <span className="font-heading font-bold text-white capitalize w-[153px] max-w-full h-[20px] text-[16px] leading-[20px] flex items-center justify-end text-right flex-none order-1 grow-0">
+                        Shelf Life, Same Lot
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Description */}
+                  <span className="font-heading font-medium text-[#C6C3C0] w-full max-w-[321.4px] h-[36px] text-[12px] leading-[18px] flex items-center flex-none order-1 self-stretch grow-0">
+                    Reliable performance across studies, instruments, and time.
                   </span>
                 </div>
-                <p className="text-neutral-400 font-sans text-xs leading-[18px]">
-                  Reliable performance across studies, instruments, and time.
-                </p>
+
+                {/* Hidden Container */}
+                <div className="hidden flex-col items-start pb-[0.565px] w-[321px] h-[40.56px] flex-none order-2 self-stretch grow-0">
+                  <span className="font-sans font-normal w-[321px] h-[40px] text-[14px] leading-[20px] flex items-center text-[rgba(255,255,255,0.28)] flex-none order-0 self-stretch grow-0">
+                    From specification to delivery. Donor cell sourcing takes 3–6 months.
+                  </span>
+                </div>
               </div>
 
-              {/* Row 3 */}
-              <div className="p-6 sm:p-8">
-                <div className="flex items-baseline justify-between gap-4 mb-2">
-                  <span className="text-[24px] font-heading font-bold text-[#f76a00] tracking-[-1.28px] leading-[28px] shrink-0">
-                    ISO
-                  </span>
-                  <span className="text-white font-heading font-semibold text-xs xs:text-sm sm:text-[15px] md:text-base leading-[20px] text-right">
-                    9001:2015 Certified
+
+              <div className="flex flex-col justify-center items-center mx-auto w-full py-[28px] px-[24px] max-w-[369.4px] h-[136.8px] flex-none order-2 self-stretch grow">
+
+                <div className="flex flex-col items-start p-0 gap-[12px] w-full max-w-[321.4px] h-[76px] flex-none order-0 self-stretch grow-0">
+
+                  <div className="flex flex-col justify-center items-center p-0 w-full max-w-[321.4px] h-[28px] flex-none order-0 self-stretch grow-0">
+                    <div className="flex flex-row justify-between items-center p-0 w-full max-w-[321.4px] h-[28px] flex-none order-0 self-stretch grow-0">
+
+                      <div className="flex flex-col items-start p-0 w-[41px] max-w-full h-[28px] flex-none order-0 grow-0">
+                        <span className="font-heading font-bold text-[#F76A00] w-full h-[28px] text-[24px] leading-[28px] flex items-center tracking-[-1.28px] flex-none order-0 grow-0">
+                          ISO
+                        </span>
+                      </div>
+
+                      <span className="font-heading font-bold text-white capitalize w-[155px] max-w-full h-[20px] text-[16px] leading-[20px] flex items-center justify-end text-right flex-none order-1 grow-0">
+                        9001:2015 Certified
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Description */}
+                  <span className="font-heading font-medium text-[#C6C3C0] w-full max-w-[321.4px] h-[36px] text-[12px] leading-[18px] flex items-center flex-none order-1 self-stretch grow-0">
+                    Manufactured & certified under ISO 9001:2015 quality standards.
                   </span>
                 </div>
-                <p className="text-neutral-400 font-sans text-xs leading-[18px]">
-                  Manufactured & certified under ISO 9001:2015 quality
-                  standards.
-                </p>
+
+                {/* Hidden Container */}
+                <div className="hidden flex-col items-start pb-[0.565px] w-[321px] h-[40.56px] flex-none order-2 self-stretch grow-0">
+                  <span className="font-sans font-normal w-[321px] h-[40px] text-[14px] leading-[20px] flex items-center text-[rgba(255,255,255,0.28)] flex-none order-0 self-stretch grow-0">
+                    From specification to delivery. Donor cell sourcing takes 3–6 months.
+                  </span>
+                </div>
               </div>
             </div>
           </div>

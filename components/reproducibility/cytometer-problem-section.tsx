@@ -32,11 +32,11 @@ export default function CytometerProblemSection() {
             </div>
 
             {/* Brand highlights in orange */}
-            <div className="mt-6 md:mt-10 space-y-2">
-              <p className="font-heading font-semibold text-[#f76a00] text-[18px] sm:text-xl md:text-[24px] leading-[32px]">
+            <div className="mt-6 md:mt-10 space-y-2 font-heading font-semibold text-[#f76a00] text-[18px] sm:text-xl md:text-[24px] leading-[32px] tracking-[-0.64px]">
+              <p>
                 You can&apos;t fix that with optics.
               </p>
-              <p className="font-heading font-semibold text-[#f76a00] text-[18px] sm:text-xl md:text-[24px] leading-[32px]">
+              <p>
                 You fix it by changing what you measure against.
               </p>
             </div>

@@ -52,7 +52,7 @@ export default function LifecycleSteps() {
   ];
 
   return (
-    <section className="bg-white text-[#0d0c0c] py-20 md:py-20 relative overflow-hidden">
+    <section className="bg-white text-[#0d0c0c] py-12 relative overflow-hidden">
       {/* Inline styles for capsule floating animations */}
       <style dangerouslySetInnerHTML={{
         __html: `
@@ -117,7 +117,7 @@ export default function LifecycleSteps() {
 
                   {/* Uppercase Step Tag */}
                   <span
-                    className={`text-[10px] font-heading font-semibold uppercase tracking-wider mb-2 transition-colors duration-300 ${step.isActive ? "text-[#f76a00]" : "text-[#78716c]"
+                    className={`text-[10px] font-heading font-semibold uppercase tracking-wider mb-2 transition-colors duration-300 ${step.isActive ? "text-[#F76A00]" : "text-[#9A9794]"
                       }`}
                   >
                     {step.tag}
@@ -129,13 +129,13 @@ export default function LifecycleSteps() {
                   </h3>
 
                   {/* Step Description */}
-                  <p className="text-[#333130] font-sans text-[14px] leading-[22.1px] max-w-[280px] lg:max-w-none min-h-[64px] px-1">
+                  <p className="text-[#333130] font-sans text-[13px] leading-[22.1px] max-w-[280px] lg:max-w-none min-h-[64px] px-1">
                     {step.description}
                   </p>
                 </div>
 
                 {/* Step Pill Button CTA */}
-                <div className="mt-5">
+                {/* <div className="mt-5">
                   {step.isOrangeCTA ? (
                     <div
                       role="button"
@@ -167,7 +167,7 @@ export default function LifecycleSteps() {
                       {step.cta}
                     </div>
                   )}
-                </div>
+                </div> */}
 
               </div>
             ))}

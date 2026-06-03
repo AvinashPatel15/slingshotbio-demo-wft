@@ -77,7 +77,7 @@ export default function StickyCtaBar() {
       </div>
 
       {/* Right Column: Actions and Close button */}
-      <div className="flex items-center gap-3 sm:gap-4 w-full sm:w-auto justify-center sm:justify-end">
+      <div className="flex flex-row items-center p-0 gap-[10px] w-[363.6px] h-[40.39px] flex-none order-1 grow-0 shrink-0">
         {/* Close Icon button */}
         <div
           role="button"
@@ -89,28 +89,34 @@ export default function StickyCtaBar() {
               setIsClosed(true);
             }
           }}
-          className="text-[#9E9E9E] hover:text-[#0d0c0c] transition-colors p-1.5 cursor-pointer text-2xl font-light shrink-0 leading-none mr-1 outline-none focus-visible:ring-1 focus-visible:ring-[#f76a00] rounded"
+          className="flex flex-col justify-center items-center p-[4.8px] w-[20.6px] h-[23.6px] flex-none order-0 grow-0 shrink-0 cursor-pointer text-[#9e9e9e] hover:text-[#0d0c0c] transition-colors outline-none focus-visible:ring-1 focus-visible:ring-[#f76a00] rounded"
           aria-label="Close promotion bar"
         >
-          ×
+          <span className="w-[11px] h-[14px] font-['Zapf_Dingbats'] font-normal text-[14.4px] leading-[14px] flex items-center justify-center text-center flex-none order-0 grow-0 shrink-0">
+            ✕
+          </span>
         </div>
 
         {/* Configure Button */}
         <a
           href="#evaluation-kit-form-section"
           onClick={handleScrollToForm}
-          className="flex-1 sm:flex-none inline-flex min-h-[44px] items-center justify-center rounded-full border border-[#DEDCDA] bg-white px-5 sm:px-6 py-2.5 font-medium text-[15px] text-[#0d0c0c] transition-all duration-200 cursor-pointer text-center whitespace-nowrap active:scale-98"
+          className="box-border flex flex-row items-center pt-[8px] px-[18px] pb-[9.39px] w-[166px] h-[40.39px] border border-[#dedcda] rounded-full flex-none order-1 grow-0 shrink-0 bg-white transition-all duration-200 cursor-pointer active:scale-98 hover:border-[#0d0c0c]"
         >
-          Configure Own Kit
+          <span className="w-[128px] h-[21px] font-sans font-medium text-[15px] leading-[20px] text-[#0d0c0c] flex items-center flex-none order-0 grow-0 shrink-0">
+            Configure Own Kit
+          </span>
         </a>
 
         {/* Request Button */}
         <a
           href="#evaluation-kit-form-section"
           onClick={handleScrollToForm}
-          className="flex-1 sm:flex-none inline-flex min-h-[44px] items-center justify-center rounded-full bg-[#F76A00] px-5 sm:px-6 py-2.5 font-medium text-[15px] !text-white transition-all duration-200 cursor-pointer text-center whitespace-nowrap active:scale-98 shadow-[0_4px_12px_rgba(247,106,0,0.15)]"
+          className="flex flex-row items-center pt-[9px] px-[20px] pb-[10.39px] w-[157px] h-[40.39px] bg-[#f76a00] rounded-full flex-none order-2 grow-0 shrink-0 transition-all duration-200 cursor-pointer active:scale-98 hover:bg-[#f76a00]/90 shadow-[0_4px_12px_rgba(247,106,0,0.15)]"
         >
-          Request Free Kit
+          <span className="h-[21px] font-sans font-semibold text-[15px] leading-[20px] tracking-[-0.12px] text-white flex items-center flex-none order-0 grow-0 shrink-0">
+            Request Free Kit
+          </span>
         </a>
       </div>
     </div>

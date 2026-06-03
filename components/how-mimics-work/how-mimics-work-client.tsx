@@ -46,21 +46,25 @@ export default function HowMimicsWorkClient() {
             </div>
 
             {/* CTA Buttons Container */}
-            <div className="how-mimics-hero-actions animate-fade-up-delay-2 mt-10 flex flex-wrap items-center gap-4 sm:gap-5 w-full">
+            <div className="how-mimics-hero-actions animate-fade-up-delay-2 mt-10 flex flex-row flex-wrap sm:flex-nowrap items-center gap-[24px] w-full max-w-[380px] h-auto sm:h-[52px] flex-none order-1 grow-0">
               {/* Primary CTA */}
               <Link
                 href="/shop#shop-all-product"
-                className="inline-flex min-h-[52px] items-center justify-center rounded-full bg-[#F76A00] px-8 py-4 font-medium text-base !text-white transition-all duration-300 hover:-translate-y-0.5 hover:brightness-105 active:translate-y-0 active:scale-98"
+                className="flex flex-row justify-center items-center py-[14px] px-[16px] gap-[10px] w-[164px] h-[52px] bg-[#F76A00] shadow-[0px_1px_2px_rgba(0,0,0,0.05)] rounded-full flex-none order-0 grow-0 transition-all duration-300 hover:-translate-y-0.5 hover:brightness-105 active:translate-y-0 active:scale-98"
               >
-                See It Engineered
+                <span className="w-[132px] h-[24px] font-sans font-medium text-[16px] leading-[24px] flex items-center justify-center text-center text-white flex-none order-0 grow-0">
+                  See It Engineered
+                </span>
               </Link>
 
               {/* Secondary CTA */}
               <Link
                 href="/sample-request"
-                className="inline-flex min-h-[52px] bg-white items-center justify-center rounded-full border border-[#0d0c0c] px-8 py-4 font-medium text-base text-[#0d0c0c] transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 active:scale-98"
+                className="box-border flex flex-row justify-center items-center py-[14px] px-[16px] gap-[10px] w-[192px] h-[52px] bg-white border border-[#0D0C0C] shadow-[0px_1px_2px_rgba(0,0,0,0.05)] rounded-full flex-none order-1 grow-0 transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 active:scale-98"
               >
-                Request Free Sample
+                <span className="w-[160px] h-[24px] font-sans font-medium text-[16px] leading-[24px] flex items-center justify-center text-center text-[#0D0C0C] flex-none order-0 grow-0">
+                  Request Free Sample
+                </span>
               </Link>
             </div>
           </div>

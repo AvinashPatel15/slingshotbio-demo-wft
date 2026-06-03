@@ -129,7 +129,7 @@ export function ProductFamilySection() {
                   </span>
 
                   {/* Title */}
-                  <h3 className="font-heading font-semibold text-[#0D0C0C] text-[18px] md:text-[20px] leading-[24px] tracking-[-0.66px] mb-2">
+                  <h3 className="font-heading font-bold text-[#0D0C0C] text-[18px] md:text-[20px] leading-[24px] tracking-[-0.66px] mb-2">
                     {product.title}
                   </h3>
 
@@ -142,7 +142,7 @@ export function ProductFamilySection() {
                 {/* CTA Link */}
                 <Link
                   href={product.ctaLink}
-                  className={`inline-flex items-center self-start !underline !underline-offset-2 text-[12px] font-sans font-medium !text-[#555350] transition-colors duration-200 gap-1.5 leading-[16px] tracking-[0.24px]`}
+                  className={`inline-flex items-center self-start !underline !underline-offset-2 text-[12px] font-sans font-semibold !text-[#F76A00] transition-colors duration-200 gap-1.5 leading-[16px] tracking-[0.24px]`}
                 >
                   <span>{product.ctaText}</span>
                   <svg
@@ -154,7 +154,7 @@ export function ProductFamilySection() {
                   >
                     <path
                       d="M4.66663 11.3334L11.3333 4.66675M11.3333 10.6667V4.66675H5.33329"
-                      stroke="#555350"
+                      stroke="#F76A00"
                       stroke-width="1.06667"
                       stroke-linecap="round"
                       stroke-linejoin="round"
