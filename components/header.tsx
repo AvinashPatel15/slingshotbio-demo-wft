@@ -52,7 +52,7 @@ export default function Header() {
         </div>
       </div>
 
-      <div className="header-mainbar">
+      <div className="header-mainbar backdrop-blur-2xl">
         <div className="frame header-container">
           <div className="header-mainbar__frame">
             <div className="header-mainbar__lead">

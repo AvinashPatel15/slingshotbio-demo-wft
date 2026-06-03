@@ -95,7 +95,7 @@ export default function ContactPage() {
 
             {/* Right speaking directly dark card */}
             <div className="w-full lg:w-auto shrink-0 relative z-20">
-              <div className="bg-[#121110] border border-white/[0.08] backdrop-blur-[12px] rounded-[18px] w-full max-w-[300px] sm:min-w-[300px] mx-auto shadow-[0_20px_50px_rgba(0,0,0,0.35)] overflow-hidden flex flex-col">
+              <div className="bg-[#121110] border border-white/[0.08] backdrop-blur-[12px] rounded-[18px] w-full max-w-[256px] mx-auto shadow-[0_20px_50px_rgba(0,0,0,0.35)] overflow-hidden flex flex-col">
 
                 {/* Main Padded Content */}
                 <div className="p-6 sm:p-7 flex flex-col items-center">
@@ -106,7 +106,7 @@ export default function ContactPage() {
                   <div className="flex flex-col gap-3.5 w-full">
                     <a
                       href="tel:+15107706806"
-                      className="flex items-center font-heading justify-center gap-2.5 w-full h-[48px] rounded-full !bg-[#E8610A] px-5 font-semibold !text-white shadow-[0_0_24px_rgba(232,97,10,0.25)] hover:shadow-[0_0_28px_rgba(232,97,10,0.35)] transition-all duration-300 text-[15px] cursor-pointer"
+                      className="flex items-center font-heading justify-center gap-2.5 w-full h-[48px] rounded-full !bg-[#E8610A] px-5 font-semibold !text-white shadow-[0_0_24px_rgba(232,97,10,0.25)] hover:shadow-[0_0_28px_rgba(232,97,10,0.35)] transition-all duration-300 text-[15px] cursor-pointer text-nowrap"
                     >
                       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M13.7967 10.7552L13.4172 11.1325C13.4172 11.1325 12.515 12.0296 10.0525 9.58102C7.59002 7.13252 8.49217 6.23549 8.49217 6.23549L8.73117 5.99783C9.32 5.41238 9.3755 4.47244 8.86175 3.78625L7.81097 2.38258C7.17515 1.53328 5.94655 1.42109 5.21779 2.14571L3.90979 3.44628C3.54844 3.80558 3.30629 4.27134 3.33566 4.78803C3.41078 6.10987 4.00884 8.95393 7.34605 12.2722C10.885 15.791 14.2056 15.9308 15.5635 15.8043C15.993 15.7643 16.3665 15.5455 16.6675 15.2462L17.8513 14.0692C18.6504 13.2746 18.4251 11.9124 17.4027 11.3567L15.8106 10.4912C15.1392 10.1263 14.3214 10.2334 13.7967 10.7552Z" fill="white" />
