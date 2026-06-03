@@ -201,9 +201,8 @@ export function ShopControlsSection() {
             {ringOrbitDots.map((dot, index) => (
               <span
                 key={`ring-orbit-${dot.orbitSize}-${index}`}
-                className={`custom-controls-cta__orbit custom-controls-cta__orbit--ring${
-                  dot.reverse ? " custom-controls-cta__orbit--reverse" : ""
-                }`}
+                className={`custom-controls-cta__orbit custom-controls-cta__orbit--ring${dot.reverse ? " custom-controls-cta__orbit--reverse" : ""
+                  }`}
                 style={
                   {
                     "--orbit-size": `${dot.orbitSize}px`,
@@ -264,10 +263,10 @@ export function ShopControlsSection() {
           </div>
           <div className="custom-controls-cta__copy">
             <div className="custom-controls-cta__title">
-              <p>Looking for TruCytes</p>
-              <p>Custom Biomarkers?</p>
+              <p>Build a Precision</p>
+              <p>Custom Cell Mimic</p>
             </div>
-            <strong>We&apos;ll engineer it.</strong>
+            <strong className=" text-xl text-[#ffffffb3] font-normal leading-7.5">See how leading labs and enterprise teams use Slingshot controls <br /> to improve reproducibility, <br /> reduce variability, and make more confident decisions.</strong>
             <a className="btn btn--primary btn--md btn--full custom-controls-cta__button" href="/custom-biomarker-cell-mimics">
               Start Your Custom Request
             </a>

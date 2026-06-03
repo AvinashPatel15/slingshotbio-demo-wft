@@ -82,11 +82,11 @@ export function TestimonialsSection() {
         <div className="frame testimonials-frame">
           <header className="testimonials-header reveal">
             <div className="eyebrow">Testimonials</div>
-            <h2 className="text-heading-lg testimonials-header__title">Built for Science. Proven in Practice.</h2>
-            <p className="text-body-lg text-muted testimonials-header__subtitle">
+            <h2 className="text-heading-lg testimonials-header__title">120+ Custom Precision Mimics Built for Science Proven in Practice</h2>
+            {/* <p className="text-body-lg text-muted testimonials-header__subtitle">
               See how leading labs and enterprise teams use Slingshot controls to improve reproducibility,
               reduce variability, and make more confident decisions.
-            </p>
+            </p> */}
           </header>
 
           <div className="testimonials-stage reveal">

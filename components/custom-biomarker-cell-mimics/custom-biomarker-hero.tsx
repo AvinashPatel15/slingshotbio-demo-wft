@@ -42,7 +42,7 @@ export default function CustomBiomarkerHero() {
           <div className="lg:col-span-8 xl:col-span-7 flex flex-col items-start text-left">
             <div className="animate-fade-up">
               <h1 className="font-heading font-semibold text-white md:leading-[72px] tracking-[-0.03em] text-[44px] sm:text-5xl md:text-[72px] transition-all">
-                Custom TruCytes<sup className="text-[30px] sm:text-[35px] md:text-[52px] lg:text-[58px]  top-[-0.20em] font-normal">®</sup> <br />
+                Custom TruCytes<sup className="text-[30px] sm:text-[35px] md:text-[52px]! lg:!text-[58px] top-[-0.20em] font-normal">®</sup> <br />
                 Biomarker Controls
               </h1>
             </div>
