@@ -29,7 +29,7 @@ export function LetsTalkSection() {
         <div className="animate-fade-up-delay-2">
           <Link
             href="/contact"
-            className="inline-flex min-h-[52px] items-center justify-center rounded-full bg-[#F76A00] px-10 py-4 font-medium text-base leading-[24px] text-white shadow-[inset_0_-1px_0_rgba(255,206,168,0.14),0_8px_20px_rgba(248,100,2,0.25),0_0_0_1px_rgba(248,132,56,0.12)] transition-all duration-300 hover:-translate-y-0.5 hover:brightness-105 active:translate-y-0 active:scale-98"
+            className="inline-flex min-h-[52px] min-w-[140px] items-center justify-center rounded-full bg-[#F76A00] px-4 py-3.5 font-medium text-base leading-[24px] text-white shadow-[inset_0_-1px_0_rgba(255,206,168,0.14),0_8px_20px_rgba(248,100,2,0.25),0_0_0_1px_rgba(248,132,56,0.12)] transition-all duration-300 hover:-translate-y-0.5 hover:brightness-105 active:translate-y-0 active:scale-98"
           >
             Let&apos;s Talk
           </Link>

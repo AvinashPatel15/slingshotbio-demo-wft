@@ -41,14 +41,14 @@ export default function CustomBiomarkerHero() {
           {/* Left Column: Title, Subtitle, and Pill CTAs */}
           <div className="lg:col-span-8 xl:col-span-7 flex flex-col items-start text-left">
             <div className="animate-fade-up">
-              <h1 className="font-heading font-semibold text-white md:leading-[72px] tracking-[-0.03em] text-[44px] sm:text-5xl md:text-[72px] transition-all">
+              <h1 className="font-heading font-semibold text-white md:leading-[72px] tracking-[-1.8px] text-[44px] sm:text-5xl md:text-[72px] transition-all">
                 Custom TruCytes<sup className="text-[30px] sm:text-[35px] md:text-[52px]! lg:!text-[58px] top-[-0.20em] font-normal">®</sup> <br />
                 Biomarker Controls
               </h1>
             </div>
 
             <div className="animate-fade-up-delay-1 mt-6">
-              <p className="text-[#c8c5c2] font-sans text-base sm:text-lg lg:text-[18px] leading-[28px] max-w-[580px]">
+              <p className="text-[#C6C3C0] font-sans text-base sm:text-lg lg:text-[18px] leading-[28px] max-w-[580px]">
                 Mimic any cell type of your choosing with custom TruCytes® biomarker cell mimics. Scalable, reproducible results tailored to your unique research needs.
               </p>
             </div>

@@ -25,7 +25,7 @@ export default function SameControlSection() {
           {/* Left Card: Donor Blood Controls */}
           <div className="bg-[#191919] rounded-[24px] p-6 md:p-8 flex flex-col justify-between transition-all">
             <div>
-              <h3 className="font-heading font-bold text-white text-xl md:text-2xl mb-6">
+              <h3 className="font-heading font-bold text-white text-xl md:text-[24.8px] mb-6">
                 Donor Blood Controls
               </h3>
 
@@ -56,7 +56,7 @@ export default function SameControlSection() {
                     />
                   </svg>
 
-                  <span className="text-[#C6C3C0] font-sans text-[16px]">
+                  <span className="text-[#C6C3C0] font-sans text-[16px] leading-[20.16px]">
                     30/90-day expiration
                   </span>
                 </li>
@@ -74,7 +74,7 @@ export default function SameControlSection() {
                       fill="white"
                     />
                   </svg>
-                  <span className="text-[#C6C3C0] font-sans text-[16px]">
+                  <span className="text-[#C6C3C0] font-sans text-[16px] leading-[20.16px]">
                     Cold chain required
                   </span>
                 </li>
@@ -92,7 +92,7 @@ export default function SameControlSection() {
                       fill="white"
                     />
                   </svg>
-                  <span className="text-[#C6C3C0] font-sans text-[16px]">
+                  <span className="text-[#C6C3C0] font-sans text-[16px] leading-[20.16px]">
                     Biohazard. BSL-2. Autoclave bag at the end.
                   </span>
                 </li>
@@ -110,7 +110,7 @@ export default function SameControlSection() {
                       fill="white"
                     />
                   </svg>
-                  <span className="text-[#C6C3C0] font-sans text-[16px]">
+                  <span className="text-[#C6C3C0] font-sans text-[16px] leading-[20.16px]">
                     Lot 47 &mdash; discontinued.
                   </span>
                 </li>
@@ -119,7 +119,7 @@ export default function SameControlSection() {
 
             {/* Stylized Center Phrase */}
             <div className="py-2 text-center select-text">
-              <span className="font-heading text-[#C6C3C0] md:text-[24px] text-[20px] block">
+              <span className="font-heading text-[#C6C3C0] md:text-[24px] text-[20px] block font-semibold leading-7">
                 &ldquo;Same Sample Can&apos;t Run Twice&rdquo;
               </span>
             </div>
@@ -128,7 +128,7 @@ export default function SameControlSection() {
           {/* Right Card: SlingShot Cell Mimics */}
           <div className="bg-[#191919] rounded-[24px] p-6 md:p-8 flex flex-col justify-between transition-all">
             <div>
-              <h3 className="font-heading font-bold text-[#F76A00] text-xl md:text-2xl mb-6">
+              <h3 className="font-heading font-bold text-[#F76A00] text-xl md:text-[24.8px] mb-6">
                 SlingShot Cell Mimics
               </h3>
 
@@ -159,7 +159,7 @@ export default function SameControlSection() {
                     />
                   </svg>
 
-                  <span className="text-[#C6C3C0] font-sans text-[16px]">
+                  <span className="text-[#C6C3C0] font-sans text-[16px] leading-[20.16px]">
                     36-month shelf life
                   </span>
                 </li>
@@ -178,7 +178,7 @@ export default function SameControlSection() {
                     />
                   </svg>
 
-                  <span className="text-[#C6C3C0] font-sans text-[16px]">
+                  <span className="text-[#C6C3C0] font-sans text-[16px] leading-[20.16px]">
                     Ships at room temperature
                   </span>
                 </li>
@@ -197,7 +197,7 @@ export default function SameControlSection() {
                     />
                   </svg>
 
-                  <span className="text-[#C6C3C0] font-sans text-[16px]">
+                  <span className="text-[#C6C3C0] font-sans text-[16px] leading-[20.16px]">
                     Non-biohazardous
                   </span>
                 </li>
@@ -216,7 +216,7 @@ export default function SameControlSection() {
                     />
                   </svg>
 
-                  <span className="text-[#C6C3C0] font-sans text-[16px]">
+                  <span className="text-[#C6C3C0] font-sans text-[16px] leading-[20.16px]">
                     Lot 47 = Lot 48 = Lot 49.
                   </span>
                 </li>
@@ -225,7 +225,7 @@ export default function SameControlSection() {
 
             {/* Stylized Center Phrase */}
             <div className="py-2 text-center select-text">
-              <span className="font-heading md:text-[24px] text-[20px] block">
+              <span className="font-heading md:text-[24px] text-[20px] block font-semibold leading-7">
                 &ldquo;A Reference That Doesn&apos;t Change&rdquo;
               </span>
             </div>

@@ -28,7 +28,7 @@ export default function ReferenceMovementSection() {
               <span className="font-sans font-medium text-[#C6C3C0] text-[11px] tracking-[1.74px] uppercase block mb-4">
                 TRADITIONAL REFERENCE
               </span>
-              <h3 className="font-heading font-bold text-white text-2xl md:text-[32px] mb-4">
+              <h3 className="font-heading font-bold text-white text-2xl md:text-[32px] md:leading-8 mb-4">
                 Polystyrene Beads
               </h3>
               <p className="text-[#9A9794] font-sans text-sm sm:text-base leading-[24px] max-w-[440px]">
@@ -71,7 +71,7 @@ export default function ReferenceMovementSection() {
 
             <p className="text-[#C6C3C0] font-sans text-sm sm:text-base leading-[26px] max-w-[960px]">
               That&apos;s a{" "}
-              <span className="text-[#f76a00] font-semibold">cell mimic.</span>{" "}
+              <span className="text-[#f76a00] font-medium leading-6">cell mimic.</span>{" "}
               A synthetic, hydrogel particle engineered to behave like a cell on
               the cytometer — same forward and side scatter, cell-like
               autofluorescence, biomarkers at the densities you choose, but

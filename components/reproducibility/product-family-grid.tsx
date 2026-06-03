@@ -73,7 +73,7 @@ export default function ProductFamilyGrid() {
               </div>
 
               {/* Tag / Badge at the bottom left */}
-              <span className="bg-[#f76a00] text-white font-sans text-[12px] font-semibold px-3 py-1.5 rounded tracking-wider uppercase inline-block">
+              <span className="bg-[#f76a00] text-white font-sans text-[12px] font-semibold px-2.5 py-[3px] rounded tracking-wider uppercase inline-block">
                 {p.badge}
               </span>
             </div>

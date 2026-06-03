@@ -134,7 +134,7 @@ export default function BiologicalControlComparison() {
                     scrollToConfigurator(e);
                   }
                 }}
-                className="inline-flex min-h-[48px] items-center justify-center rounded-full bg-[#f76a00] px-8 py-3.5 font-medium text-[16px] text-white transition-all duration-300 hover:bg-[#f76a00]/90 hover:-translate-y-0.5 active:translate-y-0 active:scale-98 cursor-pointer outline-none focus-visible:ring-2 focus-visible:ring-[#f76a00] focus-visible:ring-offset-2"
+                className="inline-flex min-h-[48px] items-center justify-center rounded-full bg-[#f76a00] px-10 py-[15px] font-medium text-[16px] text-white transition-all duration-300 hover:bg-[#f76a00]/90 hover:-translate-y-0.5 active:translate-y-0 active:scale-98 cursor-pointer outline-none focus-visible:ring-2 focus-visible:ring-[#f76a00] focus-visible:ring-offset-2"
               >
                 Read Research Paper
               </div>
@@ -148,7 +148,7 @@ export default function BiologicalControlComparison() {
                     scrollToConfigurator(e);
                   }
                 }}
-                className="inline-flex min-h-[48px] items-center justify-center rounded-full bg-[#F0F0F0] px-8 py-3.5 font-medium text-[16px] text-[#0d0c0c] transition-all duration-300 hover:bg-[#dedcda]/60 hover:-translate-y-0.5 active:translate-y-0 active:scale-98 cursor-pointer outline-none focus-visible:ring-2 focus-visible:ring-[#f76a00] focus-visible:ring-offset-2"
+                className="inline-flex min-h-[48px] items-center justify-center rounded-full bg-[#F0F0F0] px-[41px] py-[15px] font-medium text-[16px] text-[#0d0c0c] transition-all duration-300 hover:bg-[#dedcda]/60 hover:-translate-y-0.5 active:translate-y-0 active:scale-98 cursor-pointer outline-none focus-visible:ring-2 focus-visible:ring-[#f76a00] focus-visible:ring-offset-2"
               >
                 Configure Own
               </div>

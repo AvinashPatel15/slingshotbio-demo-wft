@@ -267,16 +267,16 @@ export function WhyReplaceCellsSection() {
                         handleTabClick(tab.id);
                       }
                     }}
-                    className={`flex-grow shrink-0 lg:shrink flex flex-col items-start px-6 py-5 border-r border-[#ded9d4] last:border-r-0 text-left min-w-[200px] lg:min-w-0 transition-all cursor-pointer relative ${isActive
+                    className={`flex-grow shrink-0 lg:shrink flex flex-col items-start p-5 border-r border-[#ded9d4] last:border-r-0 text-left min-w-[200px] lg:min-w-0 transition-all cursor-pointer relative ${isActive
                       ? "bg-white text-[#0d0c0c]"
                       : "bg-[#f7f6f5] hover:bg-[#ebeae8] text-neutral-500"
                       }`}
                   >
-                    <span className={`text-[10px] font-bold tracking-[1.2px] leading-[16px] mb-1.5 uppercase ${isActive ? "text-[#f76a00]" : "text-neutral-400"
+                    <span className={`text-[12px] font-bold tracking-[1.2px] leading-[16px] mb-1.5 uppercase ${isActive ? "text-[#f76a00]" : "text-neutral-400"
                       }`}>
                       {tab.number}
                     </span>
-                    <span className={`text-[14px] font-heading font-semibold leading-[16px] ${isActive ? "text-[#0d0c0c]" : "text-neutral-600"
+                    <span className={`text-[14px] font-heading  leading-[16px] ${isActive ? "text-[#0d0c0c] font-bold" : "text-neutral-600 font-medium"
                       }`}>
                       {tab.title}
                     </span>
@@ -301,11 +301,11 @@ export function WhyReplaceCellsSection() {
                   {currentTab.eyebrow}
                 </span>
 
-                <h3 className="font-heading font-semibold text-[26px] sm:text-[28px] text-[#0d0c0c] leading-[32px] tracking-[-0.7px] mb-5">
+                <h3 className="font-heading font-bold text-[26px] sm:text-[28px] text-[#0d0c0c] leading-[32px] tracking-[-0.7px] mb-5">
                   {currentTab.title}
                 </h3>
 
-                <p className="text-[#4e4a47] font-sans text-sm leading-[24px]">
+                <p className="text-[#555350] font-sans text-sm leading-[24px]">
                   {currentTab.description}
                 </p>
               </div>

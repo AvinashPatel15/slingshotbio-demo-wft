@@ -94,7 +94,7 @@ export default function EvaluationKitForm({ prefilledAntigens, prefilledExpressi
 
           {/* Right Column: Form Container Card */}
           <div className="lg:col-span-6 w-full max-w-[580px] mx-auto relative z-20">
-            <div className="bg-white border border-[#E4E1DC] rounded-[14px] p-8 md:p-10 shadow-[0_15px_45px_rgba(0,0,0,0.02)] transition-all duration-300 relative min-h-[500px] flex flex-col justify-center">
+            <div className="bg-white border border-[#E4E1DC] rounded-[14px] p-8 md:px-8 md:pt-8 md:pb-6 shadow-[0_15px_45px_rgba(0,0,0,0.02)] transition-all duration-300 relative min-h-[500px] flex flex-col justify-center">
 
               {/* Form Success State */}
               {isSuccess ? (
@@ -137,7 +137,7 @@ export default function EvaluationKitForm({ prefilledAntigens, prefilledExpressi
                         type="text"
                         value={firstName}
                         onChange={(e) => setFirstName(e.target.value)}
-                        className={`w-full bg-white border border-[#E4E1DC] rounded-[8px] px-4 py-3 text-[14px] font-sans focus:outline-none focus:ring-1 focus:ring-[#f76a00] placeholder-[#a8a29e] ${errors.firstName ? "border-red-500 bg-red-50/20" : "border-[#dedcda]"
+                        className={`w-full bg-white border border-[#E4E1DC] rounded-[8px] px-4 py-3 text-[14px] font-sans focus:outline-none focus:ring-1 focus:ring-[#f76a00] placeholder-[#a8a29e] ${errors.firstName ? "border-red-500 bg-red-50/20" : "border-[#dedcda] placeholder:text-[15px]"
                           }`}
                         placeholder="Jane"
                       />
@@ -149,7 +149,7 @@ export default function EvaluationKitForm({ prefilledAntigens, prefilledExpressi
                         type="text"
                         value={lastName}
                         onChange={(e) => setLastName(e.target.value)}
-                        className={`w-full bg-white border border-[#E4E1DC] rounded-[8px] px-4 py-3 text-[14px] font-sans focus:outline-none focus:ring-1 focus:ring-[#f76a00] placeholder-[#a8a29e] ${errors.lastName ? "border-red-500 bg-red-50/20" : "border-[#dedcda]"
+                        className={`w-full bg-white border border-[#E4E1DC] rounded-[8px] px-4 py-3 text-[14px] font-sans focus:outline-none focus:ring-1 focus:ring-[#f76a00] placeholder-[#a8a29e] ${errors.lastName ? "border-red-500 bg-red-50/20" : "border-[#dedcda] placeholder:text-[15px]"
                           }`}
                         placeholder="Smith"
                       />
@@ -164,7 +164,7 @@ export default function EvaluationKitForm({ prefilledAntigens, prefilledExpressi
                       type="email"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
-                      className={`w-full bg-white border border-[#E4E1DC] rounded-[8px] px-4 py-3 text-[14px] font-sans focus:outline-none focus:ring-1 focus:ring-[#f76a00] placeholder-[#a8a29e] ${errors.email ? "border-red-500 bg-red-50/20" : "border-[#dedcda]"
+                      className={`w-full bg-white border border-[#E4E1DC] rounded-[8px] px-4 py-3 text-[14px] font-sans focus:outline-none focus:ring-1 focus:ring-[#f76a00] placeholder-[#a8a29e] ${errors.email ? "border-red-500 bg-red-50/20" : "border-[#dedcda] placeholder:text-[15px]"
                         }`}
                       placeholder="jsmith@university.edu"
                     />
@@ -178,7 +178,7 @@ export default function EvaluationKitForm({ prefilledAntigens, prefilledExpressi
                       type="text"
                       value={company}
                       onChange={(e) => setCompany(e.target.value)}
-                      className={`w-full bg-white border border-[#E4E1DC] rounded-[8px] px-4 py-3 text-[14px] font-sans focus:outline-none focus:ring-1 focus:ring-[#f76a00] placeholder-[#a8a29e] ${errors.company ? "border-red-500 bg-red-50/20" : "border-[#dedcda]"
+                      className={`w-full bg-white border border-[#E4E1DC] rounded-[8px] px-4 py-3 text-[14px] font-sans focus:outline-none focus:ring-1 focus:ring-[#f76a00] placeholder-[#a8a29e] ${errors.company ? "border-red-500 bg-red-50/20" : "border-[#dedcda] placeholder:text-[15px]"
                         }`}
                       placeholder="University of..."
                     />
@@ -192,7 +192,7 @@ export default function EvaluationKitForm({ prefilledAntigens, prefilledExpressi
                       <select
                         value={primaryApplication}
                         onChange={(e) => setPrimaryApplication(e.target.value)}
-                        className={`w-full bg-white border border-[#E4E1DC] rounded-[8px] px-4 py-3 text-[14px] font-sans focus:outline-none focus:ring-1 focus:ring-[#f76a00] cursor-pointer appearance-none ${errors.primaryApplication ? "border-red-500 bg-red-50/20" : "border-[#dedcda]"
+                        className={`w-full bg-white border border-[#E4E1DC] rounded-[8px] px-4 py-3  leading-[19px] font-sans focus:outline-none focus:ring-1 focus:ring-[#f76a00] cursor-pointer appearance-none selection:text-[15px] ${errors.primaryApplication ? "border-red-500 bg-red-50/20" : "border-[#dedcda]"
                           }`}
                       >
                         <option value="">Select your workflow</option>
@@ -228,7 +228,7 @@ export default function EvaluationKitForm({ prefilledAntigens, prefilledExpressi
                           }
                         }
                       }}
-                      className={`w-full inline-flex min-h-[50px] items-center justify-center rounded-full bg-[#f76a00] px-6 py-3 font-semibold text-[13px] text-white shadow-[0_4px_15px_rgba(247,106,0,0.15)] transition-all duration-300 hover:shadow-[0_8px_22px_rgba(247,106,0,0.25)] hover:-translate-y-0.5 cursor-pointer outline-none focus-visible:ring-2 focus-visible:ring-[#f76a00] focus-visible:ring-offset-2 ${isSubmitting ? "opacity-50 cursor-not-allowed hover:translate-y-0" : ""
+                      className={`w-full inline-flex min-h-[50px] items-center justify-center rounded-full bg-[#f76a00] px-7 py-3.5 font-semibold text-[13px] text-white shadow-[0_4px_15px_rgba(247,106,0,0.15)] transition-all duration-300 hover:shadow-[0_8px_22px_rgba(247,106,0,0.25)] hover:-translate-y-0.5 cursor-pointer outline-none focus-visible:ring-2 focus-visible:ring-[#f76a00] focus-visible:ring-offset-2 ${isSubmitting ? "opacity-50 cursor-not-allowed hover:translate-y-0" : ""
                         }`}
                     >
                       {isSubmitting ? (
@@ -240,7 +240,7 @@ export default function EvaluationKitForm({ prefilledAntigens, prefilledExpressi
                   </div>
 
                   {/* Soft response timing notice */}
-                  <p className="text-center text-[11px] text-[#9A9794] font-heading font-medium">
+                  <p className="text-center text-[11px] leading-[18.7px] text-[#9A9794] font-heading font-medium">
                     Reply &lt;2 business days · No commitment
                   </p>
                 </form>

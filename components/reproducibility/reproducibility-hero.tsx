@@ -25,7 +25,7 @@ export default function ReproducibilityHero() {
 
             {/* Premium, High-Impact Heading */}
             <div className="animate-fade-up-delay-1 md:mt-6 mt-3">
-              <h1 className="font-heading font-semibold text-white md:leading-[80px] tracking-[-0.02em] text-[40px] sm:text-5xl md:text-[72px] max-w-[720px] transition-all">
+              <h1 className="font-heading font-semibold text-white md:leading-[80px] tracking-[-1.8px] text-[40px] sm:text-5xl md:text-[72px] max-w-[720px] transition-all">
                 A Reference That <br className="hidden sm:inline" />
                 Doesn&apos;t Change.
               </h1>
@@ -33,7 +33,7 @@ export default function ReproducibilityHero() {
 
             {/* Description Text */}
             <div className="animate-fade-up-delay-2 md:mt-8 mt-4">
-              <p className="text-[#C6C3C0] font-sans text-[15px] sm:text-base md:text-[18px] leading-[1.65] max-w-[540px] transition-all">
+              <p className="text-[#C6C3C0] font-sans text-[15px] sm:text-base md:text-[18px] leading-7  max-w-[540px] transition-all">
                 For two decades, the field has poured money into better lasers,
                 more detectors, smarter unmixing. The instruments became great.
                 The reproducibility didn&apos;t.

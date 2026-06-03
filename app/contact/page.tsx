@@ -348,14 +348,8 @@ export default function ContactPage() {
                     >
                       {getButtonText()}
                     </div>
-                    <div className="text-center mt-6 md:mt-8 text-[12px] font-semibold font-heading text-[#a09b97] flex items-center justify-center gap-2">
-                      <span className="underline decoration-[#a09b97] underline-offset-4 cursor-pointer hover:text-[#f76a00] hover:decoration-[#f76a00] transition-colors">
-                        Reply &lt;2 business days
-                      </span>{" "}
-                      <span>&middot;</span>{" "}
-                      <span className="underline decoration-[#a09b97] underline-offset-4 cursor-pointer hover:text-[#f76a00] hover:decoration-[#f76a00] transition-colors">
-                        Unsubscribe anytime
-                      </span>
+                    <div className="text-center mt-6 md:mt-8 text-[12px] underline font-semibold font-heading text-[#9A9794] flex items-center justify-center gap-2">
+                      Reply &lt;2 business days · Unsubscribe anytime
                     </div>
                   </div>
                 </form>
@@ -418,43 +412,50 @@ export default function ContactPage() {
                   ))}
                 </div>
               </div>
-
+              <div className=" h-[1px] bg-[#E2DDD7] w-full"></div>
               {/* Contact Sales Card */}
               <div className="bg-white rounded-[18px] border border-[#E2DDD7] relative overflow-hidden group flex flex-col">
                 <div className="absolute right-0 bottom-0 w-44 h-44 bg-[#f76a00]/5 rounded-full blur-3xl group-hover:bg-[#f76a00]/10 transition-colors duration-500 pointer-events-none" />
 
-                {/* Card Header (Full-width divider layout) */}
-                <div className="px-6 py-4 flex items-center gap-2 border-b border-[#e8e4e0] bg-white">
-                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.00024 16.4999C13.1423 16.4999 16.5002 13.142 16.5002 8.99988C16.5002 4.85774 13.1423 1.49988 9.00024 1.49988C4.85811 1.49988 1.50024 4.85774 1.50024 8.99988C1.50024 10.1997 1.78196 11.3336 2.28284 12.3393C2.41595 12.6065 2.46025 12.912 2.38308 13.2003L1.93638 14.8699C1.74246 15.5946 2.4055 16.2576 3.13026 16.0638L4.79979 15.6171C5.08819 15.5399 5.39365 15.5842 5.66089 15.7173C6.66652 16.2182 7.80047 16.4999 9.00024 16.4999Z" stroke="#E8610A" stroke-width="1.35" />
-                    <path d="M6.00024 7.875H12.0002" stroke="#E8610A" stroke-width="1.125" stroke-linecap="round" />
-                    <path d="M6.00024 10.4999H10.1252" stroke="#E8610A" stroke-width="1.125" stroke-linecap="round" />
-                  </svg>
+                <div className=" relative">
+                  {/* Gradient */}
+                  <div
+                    className="pointer-events-none"
+                    style={{ position: 'absolute', width: '140px', height: '140px', right: '-50.4px', bottom: '-50.39px', background: 'radial-gradient(70.71% 70.71% at 50% 50%, rgba(232, 97, 10, 0.16) 0%, rgba(232, 97, 10, 0) 65%)', flex: 'none', order: 1, flexGrow: 0, zIndex: 1 }}
+                  />
+                  {/* Card Header (Full-width divider layout) */}
+                  <div className="mx-6 pt-4 pb-2 flex items-center gap-2 border-b border-[#e8e4e0] bg-white">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.00024 16.4999C13.1423 16.4999 16.5002 13.142 16.5002 8.99988C16.5002 4.85774 13.1423 1.49988 9.00024 1.49988C4.85811 1.49988 1.50024 4.85774 1.50024 8.99988C1.50024 10.1997 1.78196 11.3336 2.28284 12.3393C2.41595 12.6065 2.46025 12.912 2.38308 13.2003L1.93638 14.8699C1.74246 15.5946 2.4055 16.2576 3.13026 16.0638L4.79979 15.6171C5.08819 15.5399 5.39365 15.5842 5.66089 15.7173C6.66652 16.2182 7.80047 16.4999 9.00024 16.4999Z" stroke="#E8610A" stroke-width="1.35" />
+                      <path d="M6.00024 7.875H12.0002" stroke="#E8610A" stroke-width="1.125" stroke-linecap="round" />
+                      <path d="M6.00024 10.4999H10.1252" stroke="#E8610A" stroke-width="1.125" stroke-linecap="round" />
+                    </svg>
 
 
-                  <h4 className="font-semibold font-heading text-[#9A9794] text-[16px] leading-[20px] tracking-tight">
-                    Contact Sales
-                  </h4>
-                </div>
-
-                {/* Card Content */}
-                <div className="px-6 py-6 space-y-3.5 relative z-10 grow">
-                  <div className="text-[14px] font-normal leading-relaxed text-[#0D0C0C]">
-                    <span className="font-medium underline decoration-[#111111] underline-offset-4">
-                      Phone:
-                    </span>{" "}
-                    +1 510 770 6806
+                    <h4 className="font-semibold font-heading text-[#9A9794] text-[16px] leading-[20px] tracking-tight">
+                      Contact Sales
+                    </h4>
                   </div>
-                  <div className="text-[14px] font-normal leading-relaxed text-[#0D0C0C]">
-                    <span className="font-medium underline decoration-[#111111] underline-offset-4">
-                      Email:
-                    </span>{" "}
-                    <a
-                      href="mailto:sales@slingshotbio.com"
-                      className="hover:text-[#f76a00] transition-colors"
-                    >
-                      sales@slingshotbio.com
-                    </a>
+
+                  {/* Card Content */}
+                  <div className="px-6 py-6 space-y-3.5 relative z-10 grow">
+                    <div className="text-[14px] font-normal leading-relaxed text-[#0D0C0C]">
+                      <span className="font-medium underline decoration-[#111111] underline-offset-4">
+                        Phone:
+                      </span>{" "}
+                      +1 510 770 6806
+                    </div>
+                    <div className="text-[14px] font-normal leading-relaxed text-[#0D0C0C]">
+                      <span className="font-medium underline decoration-[#111111] underline-offset-4">
+                        Email:
+                      </span>{" "}
+                      <a
+                        href="mailto:sales@slingshotbio.com"
+                        className="hover:text-[#f76a00] transition-colors"
+                      >
+                        sales@slingshotbio.com
+                      </a>
+                    </div>
                   </div>
                 </div>
 
@@ -472,29 +473,34 @@ export default function ContactPage() {
               {/* Headquarters Card */}
               <div className="bg-white rounded-[18px] border border-[#e8e4e0] shadow-[0_12px_40px_rgba(31,24,18,0.03)] relative overflow-hidden group flex flex-col">
                 <div className="absolute right-0 bottom-0 w-44 h-44 bg-[#f76a00]/5 rounded-full blur-3xl group-hover:bg-[#f76a00]/10 transition-colors duration-500 pointer-events-none" />
+                <div className=" relative">
+                  {/* Gradient */}
+                  <div
+                    className="pointer-events-none"
+                    style={{ position: 'absolute', width: '140px', height: '140px', right: '-50.4px', bottom: '-50.39px', background: 'radial-gradient(70.71% 70.71% at 50% 50%, rgba(232, 97, 10, 0.16) 0%, rgba(232, 97, 10, 0) 65%)', flex: 'none', order: 1, flexGrow: 0, zIndex: 1 }}
+                  />
+                  {/* Card Header (Full-width divider layout) */}
+                  <div className="mx-6 pt-4 pb-2 flex items-center gap-1 border-b border-[#e8e4e0] bg-white">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4.5C7.34314 4.5 6 5.84314 6 7.5C6 9.15683 7.34314 10.5 9 10.5C10.6568 10.5 12 9.15683 12 7.5C12 5.84314 10.6568 4.5 9 4.5ZM9 6C8.17155 6 7.5 6.67157 7.5 7.5C7.5 8.32845 8.17155 9 9 9C9.82845 9 10.5 8.32845 10.5 7.5C10.5 6.67157 9.82845 6 9 6Z" fill="#E8610A" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.31758 16.9468C8.40443 17.0065 8.47358 17.0525 8.52195 17.0841L8.60153 17.1354C8.84498 17.2878 9.15457 17.2881 9.39802 17.1357L9.47812 17.0841C9.52642 17.0525 9.59557 17.0065 9.68242 16.9468C9.85612 16.8275 10.1014 16.6531 10.3943 16.4281C10.979 15.9791 11.7601 15.3241 12.5435 14.5002C14.0893 12.8746 15.75 10.4794 15.75 7.63635C15.75 5.81536 15.0428 4.06563 13.7789 2.77296C12.5144 1.47972 10.7957 0.75 9 0.75C7.20428 0.75 5.48561 1.47972 4.2211 2.77296C2.95716 4.06563 2.25 5.81536 2.25 7.63635C2.25 10.4794 3.91075 12.8746 5.45648 14.5002C6.23995 15.3241 7.02102 15.9791 7.60567 16.4281C7.89862 16.6531 8.14388 16.8275 8.31758 16.9468ZM9 2.25C7.6131 2.25 6.27955 2.8133 5.29361 3.82164C4.30712 4.83055 3.75 6.20244 3.75 7.63635C3.75 9.90053 5.08925 11.9372 6.54352 13.4666C7.26005 14.2201 7.97895 14.8235 8.51933 15.2384C8.70345 15.3799 8.86613 15.4988 9 15.5938C9.13387 15.4988 9.29655 15.3799 9.48067 15.2384C10.021 14.8235 10.7399 14.2201 11.4565 13.4666C12.9107 11.9372 14.25 9.90053 14.25 7.63635C14.25 6.20244 13.6929 4.83055 12.7063 3.82164C11.7205 2.8133 10.3869 2.25 9 2.25Z" fill="#E8610A" />
+                    </svg>
 
-                {/* Card Header (Full-width divider layout) */}
-                <div className="px-6 py-4 flex items-center gap-1 border-b border-[#e8e4e0] bg-white">
-                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4.5C7.34314 4.5 6 5.84314 6 7.5C6 9.15683 7.34314 10.5 9 10.5C10.6568 10.5 12 9.15683 12 7.5C12 5.84314 10.6568 4.5 9 4.5ZM9 6C8.17155 6 7.5 6.67157 7.5 7.5C7.5 8.32845 8.17155 9 9 9C9.82845 9 10.5 8.32845 10.5 7.5C10.5 6.67157 9.82845 6 9 6Z" fill="#E8610A" />
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.31758 16.9468C8.40443 17.0065 8.47358 17.0525 8.52195 17.0841L8.60153 17.1354C8.84498 17.2878 9.15457 17.2881 9.39802 17.1357L9.47812 17.0841C9.52642 17.0525 9.59557 17.0065 9.68242 16.9468C9.85612 16.8275 10.1014 16.6531 10.3943 16.4281C10.979 15.9791 11.7601 15.3241 12.5435 14.5002C14.0893 12.8746 15.75 10.4794 15.75 7.63635C15.75 5.81536 15.0428 4.06563 13.7789 2.77296C12.5144 1.47972 10.7957 0.75 9 0.75C7.20428 0.75 5.48561 1.47972 4.2211 2.77296C2.95716 4.06563 2.25 5.81536 2.25 7.63635C2.25 10.4794 3.91075 12.8746 5.45648 14.5002C6.23995 15.3241 7.02102 15.9791 7.60567 16.4281C7.89862 16.6531 8.14388 16.8275 8.31758 16.9468ZM9 2.25C7.6131 2.25 6.27955 2.8133 5.29361 3.82164C4.30712 4.83055 3.75 6.20244 3.75 7.63635C3.75 9.90053 5.08925 11.9372 6.54352 13.4666C7.26005 14.2201 7.97895 14.8235 8.51933 15.2384C8.70345 15.3799 8.86613 15.4988 9 15.5938C9.13387 15.4988 9.29655 15.3799 9.48067 15.2384C10.021 14.8235 10.7399 14.2201 11.4565 13.4666C12.9107 11.9372 14.25 9.90053 14.25 7.63635C14.25 6.20244 13.6929 4.83055 12.7063 3.82164C11.7205 2.8133 10.3869 2.25 9 2.25Z" fill="#E8610A" />
-                  </svg>
-
-                  <h4 className="font-semibold font-heading text-[#9A9794] text-[16px] leading-[20px] tracking-tight">
-                    Headquarters
-                  </h4>
-                </div>
-
-                {/* Card Content */}
-                <div className="px-6 py-6 space-y-2 relative z-10 grow">
-                  <div className="text-[14px] font-normal text-[#0D0C0C] mb-1">
-                    California, USA
+                    <h4 className="font-semibold font-heading text-[#9A9794] text-[16px] leading-[20px] tracking-tight">
+                      Headquarters
+                    </h4>
                   </div>
-                  <div className="text-[14px] font-normal leading-relaxed text-[#0D0C0C]">
-                    1250 45th St, Suite 150 Emeryville, CA 94608
+
+                  {/* Card Content */}
+                  <div className="px-6 py-6 space-y-2 relative z-10 grow">
+                    <div className="text-[14px] font-normal text-[#0D0C0C] mb-1">
+                      California, USA
+                    </div>
+                    <div className="text-[14px] font-normal leading-relaxed text-[#0D0C0C]">
+                      1250 45th St, Suite 150 Emeryville, CA 94608
+                    </div>
                   </div>
                 </div>
-
                 {/* Card Footer */}
                 <div className="py-4 border-t border-[#e8e4e0] text-center relative z-10 mt-auto bg-white rounded-b-[24px]">
                   <a

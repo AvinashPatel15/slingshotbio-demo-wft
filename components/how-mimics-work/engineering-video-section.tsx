@@ -31,10 +31,10 @@ export function EngineeringVideoSection() {
             </p>
 
             {/* Tags/Badges */}
-            <div className="flex flex-wrap items-center gap-2.5 animate-fade-up-delay-2">
+            <div className="flex flex-wrap max-h-7 items-center gap-2.5 animate-fade-up-delay-2">
 
               {/* Play Badge */}
-              <div className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-white/5 text-white/40 text-xs font-semibold uppercase tracking-wider leading-none transition-colors hover:border-white/20 hover:bg-white/10">
+              <div className="inline-flex items-center gap-1.5 px-3 pt-1 pb-1.5 rounded-full bg-white/5 text-white/40 text-xs font-semibold uppercase tracking-wider leading-none transition-colors hover:border-white/20 hover:bg-white/10">
                 <svg className="w-3.5 h-3.5 fill-current text-white/40" viewBox="0 0 24 24">
                   <path d="M8 5v14l11-7z" />
                 </svg>
@@ -42,12 +42,12 @@ export function EngineeringVideoSection() {
               </div>
 
               {/* Tag 2 */}
-              <div className="px-3.5 py-2 rounded-full bg-white/5 text-white/40 text-xs font-semibold uppercase tracking-[0.23px] leading-[16px] transition-colors hover:border-white/20 hover:bg-white/10">
+              <div className="px-3 pt-1 pb-1.5 rounded-full bg-white/5 text-white/40 text-xs font-semibold uppercase tracking-[0.23px] leading-[16px] transition-colors hover:border-white/20 hover:bg-white/10">
                 Manufacturing process
               </div>
 
               {/* Tag 3 */}
-              <div className="px-3.5 py-2 rounded-full bg-white/5 text-white/40 text-xs font-semibold uppercase tracking-[0.23px] leading-[16px] transition-colors hover:border-white/20 hover:bg-white/10">
+              <div className="px-3 pt-1 pb-1.5 rounded-full bg-white/5 text-white/40 text-xs font-semibold uppercase tracking-[0.23px] leading-[16px] transition-colors hover:border-white/20 hover:bg-white/10">
                 ISO 9001:2015
               </div>
 
