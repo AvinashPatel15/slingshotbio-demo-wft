@@ -93,3 +93,23 @@ export type FooterSocialLink = {
   href: string;
   iconSrc: string;
 };
+
+export type ContactNextStep = {
+  number: string;
+  title: string;
+  copy: string;
+  label: string;
+  active?: boolean;
+  isButton?: boolean;
+};
+
+export interface ProductItem {
+  id: string;
+  category: string;
+  title: string;
+  description: string;
+  imageSrc: string;
+  ctaText: string;
+  ctaLink: string;
+  isCustom?: boolean;
+}

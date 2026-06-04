@@ -1,17 +1,8 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 
 export default function CustomBiomarkerHero() {
-  const scrollToConfigurator = (e: React.MouseEvent) => {
-    e.preventDefault();
-    const configSection = document.getElementById("configurator-section");
-    if (configSection) {
-      configSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   const scrollToForm = (e: React.MouseEvent) => {
     e.preventDefault();
     const formSection = document.getElementById("evaluation-kit-form-section");
@@ -21,61 +12,173 @@ export default function CustomBiomarkerHero() {
   };
 
   return (
-    <section className="bg-[#0d0c0c] text-white relative py-20 md:py-32 md:min-h-[75vh] !min-h-[50vh] flex items-center overflow-hidden">
-
-      {/* Absolute Background Image representing custom-hero.png */}
-      <div className="absolute inset-0 z-0 select-none">
-        <Image
-          src="/custom-hero.png"
-          alt="Starry background with glowing cell mimic globe"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-right lg:object-center opacity-90"
-        />
-      </div>
-
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-
-          {/* Left Column: Title, Subtitle, and Pill CTAs */}
-          <div className="lg:col-span-8 xl:col-span-7 flex flex-col items-start text-left">
-            <div className="animate-fade-up">
-              <h1 className="font-heading font-semibold text-white md:leading-[72px] tracking-[-1.8px] text-[44px] sm:text-5xl md:text-[72px] transition-all">
-                Custom TruCytes<sup className="text-[30px] sm:text-[35px] md:text-[52px]! lg:!text-[58px] top-[-0.20em] font-normal">®</sup> <br />
-                Biomarker Controls
-              </h1>
-            </div>
-
-            <div className="animate-fade-up-delay-1 mt-6">
-              <p className="text-[#C6C3C0] font-sans text-base sm:text-lg lg:text-[18px] leading-[28px] max-w-[580px]">
-                Mimic any cell type of your choosing with custom TruCytes® biomarker cell mimics. Scalable, reproducible results tailored to your unique research needs.
-              </p>
-            </div>
-
-            {/* Pill CTAs matching mockup button design */}
-            <div className="animate-fade-up-delay-2 mt-10 flex flex-wrap items-center gap-4 sm:gap-5 w-full">
-              <a
-                href="#evaluation-kit-form-section"
-                onClick={scrollToForm}
-                className="inline-flex min-h-[50px] items-center justify-center rounded-full bg-[#f76a00] px-[16px] py-3.5 font-medium text-[16px] text-white shadow-[0_4px_15px_rgba(247,106,0,0.2)] transition-all duration-300 hover:bg-[#f76a00]/90 hover:-translate-y-0.5 active:translate-y-0 active:scale-98 cursor-pointer"
+    <section
+      className="relative w-full bg-[#000000] bg-cover bg-center flex flex-col items-center justify-center py-12 px-6 md:px-12 xl:p-0 xl:h-[560px]  xl:mx-auto"
+      style={{
+        backgroundImage: "url('/custom-hero.png')",
+      }}
+    >
+      <div className="frame h-full relative">
+        <div className="w-full max-w-[643px] flex flex-col gap-8 xl:gap-0 xl:absolute xl:left-0 xl:top-[114.11px] xl:w-[643px] xl:h-[332px] xl:justify-between xl:items-start">
+          <div className="w-full flex flex-col gap-8 xl:gap-[32px] xl:w-[643px] xl:h-[232px] xl:justify-between xl:items-start">
+            <h1 className="text-white font-heading font-semibold flex items-center xl:w-[643px] xl:h-[144px] text-[36px] sm:text-[48px] xl:text-[72px] leading-[1.1] xl:leading-[72px] tracking-[-1px] xl:tracking-[-1.8px]">
+              Custom TruCytes® Biomarker Controls
+            </h1>
+            <p className="text-[#C6C3C0] font-sans flex items-center xl:w-[643px] xl:h-[56px] text-[16px] xl:text-[18px] leading-[24px] xl:leading-[28px]">
+              Precision-engineered cell mimics built to your exact specifications—for rare indications, novel targets, and complex multi-biomarker panels.
+            </p>
+          </div>
+          <div className="flex flex-row items-center xl:w-[173px] xl:h-[52px]">
+            <a
+              href="#evaluation-kit-form-section"
+              onClick={scrollToForm}
+              className="flex flex-row justify-center items-center bg-[#F76A00] rounded-full shadow-[0px_1px_2px_rgba(0,0,0,0.05)] hover:bg-[#ff7b1a] active:scale-95 transition-all duration-200"
+              style={{
+                padding: "14px 16px",
+                gap: "10px",
+                width: "173px",
+                height: "52px",
+              }}
+            >
+              <span
+                className="font-sans font-medium text-[16px] leading-[24px] flex items-center justify-center text-center text-white"
+                style={{
+                  width: "141px",
+                  height: "24px",
+                }}
               >
-                Free Evaluation Kit
-              </a>
-
-              <a
-                href="#configurator-section"
-                onClick={scrollToConfigurator}
-                className="inline-flex min-h-[50px] items-center justify-center rounded-full bg-white px-[16px] py-3.5 font-medium text-[16px] !text-black transition-all duration-300 hover:bg-white/90 hover:-translate-y-0.5 active:translate-y-0 active:scale-98 cursor-pointer"
-              >
-                Configure Own Kit
-              </a>
+                Request a Meeting
+              </span>
+            </a>
+          </div>
+        </div>
+        <div
+          className="w-full max-w-[371px] mt-8 xl:mt-0 xl:absolute xl:right-0 xl:top-[114.11px] xl:w-[371px] xl:h-[255.2px] flex flex-col items-start bg-[rgba(13,12,12,0.2)] border-[0.8px] border-[#3D3D3D] rounded-[14px]"
+          style={{
+            boxSizing: "border-box",
+            backdropFilter: "blur(5.35px)",
+          }}
+        >
+          <div
+            className="flex flex-col justify-center items-center border-b-[0.8px] border-[#3D3D3D]"
+            style={{
+              padding: "28px 24px",
+              width: "100%",
+              maxWidth: "369.4px",
+              height: "84.8px",
+              boxSizing: "border-box",
+            }}
+          >
+            <div className="flex flex-col items-start gap-3 w-full max-w-[321.4px] h-[28px]">
+              <div className="flex flex-col justify-center items-center w-full h-[28px]">
+                <div className="flex flex-row justify-between items-center w-full h-[28px]">
+                  <div
+                    className="flex flex-col items-start w-[156px] h-[28px]"
+                    style={{
+                      margin: "0 auto",
+                    }}
+                  >
+                    <span className="font-heading font-bold text-[24px] leading-[28px] tracking-[-1.28px] text-[#F76A00] flex items-center w-[156px] h-[28px]">
+                      ISO 9001:2015
+                    </span>
+                  </div>
+                  <span
+                    className="font-heading font-bold text-[16px] leading-[20px] text-white flex items-end capitalize w-[70px] h-[20px]"
+                    style={{
+                      margin: "0 auto",
+                    }}
+                  >
+                    Certified
+                  </span>
+                </div>
+              </div>
+              <div style={{ display: "none" }} className="w-[321px] h-[40.56px]">
+                <span className="font-sans font-normal text-[14px] leading-[20px] text-[rgba(255,255,255,0.28)] flex items-center w-[321px] h-[40px]">
+                  From specification to delivery. Donor cell sourcing takes 3–6 months.
+                </span>
+              </div>
             </div>
           </div>
-
-          {/* Right Column: Kept empty to let the background cell mimic display cleanly on the right side */}
-          <div className="hidden lg:block lg:col-span-4 xl:col-span-5" />
-
+          <div
+            className="flex flex-col justify-center items-center border-b-[0.8px] border-[#3D3D3D]"
+            style={{
+              padding: "28px 24px",
+              width: "100%",
+              maxWidth: "369.4px",
+              height: "84.8px",
+              boxSizing: "border-box",
+            }}
+          >
+            <div className="flex flex-col items-start gap-3 w-full max-w-[321.4px] h-[28px]">
+              <div className="flex flex-col justify-center items-center w-full h-[28px]">
+                <div className="flex flex-row justify-between items-center w-full h-[28px]">
+                  <div
+                    className="flex flex-col items-start w-[76px] h-[28px]"
+                    style={{
+                      margin: "0 auto",
+                    }}
+                  >
+                    <span className="font-heading font-bold text-[24px] leading-[28px] tracking-[-1.28px] text-[#F76A00] flex items-center w-[76px] h-[28px]">
+                      &lt;10 CV
+                    </span>
+                  </div>
+                  <span
+                    className="font-heading font-bold text-[16px] leading-[20px] text-white flex items-center capitalize w-[89px] h-[20px]"
+                    style={{
+                      margin: "0 auto",
+                    }}
+                  >
+                    Lot-to-Lot
+                  </span>
+                </div>
+              </div>
+              <div style={{ display: "none" }} className="w-[321px] h-[40.56px]">
+                <span className="font-sans font-normal text-[14px] leading-[20px] text-[rgba(255,255,255,0.28)] flex items-center w-[321px] h-[40px]">
+                  From specification to delivery. Donor cell sourcing takes 3–6 months.
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            className="flex flex-col justify-center items-center"
+            style={{
+              padding: "28px 24px",
+              width: "100%",
+              maxWidth: "369.4px",
+              height: "84px",
+              boxSizing: "border-box",
+            }}
+          >
+            <div className="flex flex-col items-start gap-3 w-full max-w-[321.4px] h-[28px]">
+              <div className="flex flex-col justify-center items-center w-full h-[28px]">
+                <div className="flex flex-row justify-between items-center w-full h-[28px]">
+                  <div
+                    className="flex flex-col items-start w-[203px] h-[28px]"
+                    style={{
+                      margin: "0 auto",
+                    }}
+                  >
+                    <span className="font-heading font-bold text-[24px] leading-[28px] tracking-[-1.28px] text-[#F76A00] flex items-center w-[203px] h-[28px]">
+                      Non-Biohazardous
+                    </span>
+                  </div>
+                  <span
+                    className="font-heading font-bold text-[16px] leading-[20px] text-white flex items-center capitalize w-[72px] h-[20px]"
+                    style={{
+                      margin: "0 auto",
+                    }}
+                  >
+                    Materials
+                  </span>
+                </div>
+              </div>
+              <div style={{ display: "none" }} className="w-[321px] h-[40.56px]">
+                <span className="font-sans font-normal text-[14px] leading-[20px] text-[rgba(255,255,255,0.28)] flex items-center w-[321px] h-[40px]">
+                  From specification to delivery. Donor cell sourcing takes 3–6 months.
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -1,3 +1,5 @@
+import { PlayIcon } from "../ui/icons";
+
 const YOUTUBE_VIDEO_ID = "N7WwGjPxTcI"; // Replace with your actual Slingshot video ID, e.g. "Time to Take Control"
 
 export function EngineeringVideoSection() {
@@ -35,9 +37,7 @@ export function EngineeringVideoSection() {
 
               {/* Play Badge */}
               <div className="inline-flex items-center gap-1.5 px-3 pt-1 pb-1.5 rounded-full bg-white/5 text-white/40 text-xs font-semibold uppercase tracking-wider leading-none transition-colors hover:border-white/20 hover:bg-white/10">
-                <svg className="w-3.5 h-3.5 fill-current text-white/40" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
+                <PlayIcon className="w-3.5 h-3.5 fill-current text-white/40" />
                 ~3 min
               </div>
 
