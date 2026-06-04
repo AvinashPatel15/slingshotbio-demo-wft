@@ -3,81 +3,8 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-
-interface ProductItem {
-  id: string;
-  category: string;
-  title: string;
-  description: string;
-  imageSrc: string;
-  ctaText: string;
-  ctaLink: string;
-  isCustom?: boolean;
-}
-
-const PRODUCTS: ProductItem[] = [
-  {
-    id: "phenocytes",
-    category: "IMMUNOPHENOTYPING",
-    title: "PhenoCytes",
-    description:
-      "Biomarker and immunophenotyping controls. Engineered surface antigen epitopes with quantitatively tunable density. TBNK and CD34+are off the shelf options.",
-    imageSrc: "/product.jpg",
-    ctaText: "Explore",
-    ctaLink: "/shop#phenocytes",
-  },
-  {
-    id: "stimcytes",
-    category: "FUNCTIONAL ASSAYS",
-    title: "StimCytes",
-    description:
-      "Functional controls for cell activation and stimulation workflows.",
-    imageSrc: "/product.jpg",
-    ctaText: "Explore",
-    ctaLink: "/shop#stimcytes",
-  },
-  {
-    id: "quantcytes",
-    category: "QUANTITATION",
-    title: "QuantCytes",
-    description:
-      "Quantitative antigen density standards. Defined epitope counts per particle for biomarker quantitation.",
-    imageSrc: "/product.jpg",
-    ctaText: "Explore",
-    ctaLink: "/shop#quantcytes",
-  },
-  {
-    id: "scatterbridge",
-    category: "SCATTER CALIBRATION",
-    title: "ScatterBridge",
-    description:
-      "Scatter calibration across instruments. Same particle, same signal, every cytometer.",
-    imageSrc: "/product.jpg",
-    ctaText: "Explore",
-    ctaLink: "/shop#scatterbridge",
-  },
-  {
-    id: "flowcytes",
-    category: "INSTRUMENT QC",
-    title: "FlowCytes",
-    description:
-      "Instrument standardization, compensation, and spectral unmixing controls.",
-    imageSrc: "/product.jpg",
-    ctaText: "Explore",
-    ctaLink: "/shop#flowcytes",
-  },
-  {
-    id: "trucytes",
-    category: "CUSTOM",
-    title: "TruCytes",
-    description:
-      "Custom controls. Engineered to your specification in weeks, not months.",
-    imageSrc: "/product.jpg",
-    ctaText: "Configure Your Own",
-    ctaLink: "/sample-request",
-    isCustom: true,
-  },
-];
+import { products } from "../../content/product-family";
+import { ArrowUpRightIcon } from "../ui/icons";
 
 export function ProductFamilySection() {
   return (
@@ -96,7 +23,7 @@ export function ProductFamilySection() {
 
         {/* Products Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 animate-fade-up-delay-1">
-          {PRODUCTS.map((product) => (
+          {products.map((product) => (
             <div
               key={product.id}
               className="group bg-white rounded-[16px] border border-[#DEDCDA] overflow-hidden flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5"
@@ -145,21 +72,7 @@ export function ProductFamilySection() {
                   className={`inline-flex items-center self-start !underline !underline-offset-2 text-[12px] font-sans font-semibold !text-[#F76A00] transition-colors duration-200 gap-1.5 leading-[16px] tracking-[0.24px]`}
                 >
                   <span>{product.ctaText}</span>
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M4.66663 11.3334L11.3333 4.66675M11.3333 10.6667V4.66675H5.33329"
-                      stroke="#F76A00"
-                      stroke-width="1.06667"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+                  <ArrowUpRightIcon />
                 </Link>
               </div>
             </div>

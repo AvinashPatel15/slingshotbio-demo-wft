@@ -1,13 +1,9 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import { SmallCheckIcon, PulsingCheckIcon, DropdownChevronIcon } from "../ui/icons";
 
-interface FormProps {
-  prefilledAntigens: string[];
-  prefilledExpression: string;
-}
-
-export default function EvaluationKitForm({ prefilledAntigens, prefilledExpression }: FormProps) {
+export default function EvaluationKitForm() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -52,19 +48,19 @@ export default function EvaluationKitForm({ prefilledAntigens, prefilledExpressi
   };
 
   return (
-    <section id="evaluation-kit-form-section" className="bg-[#faf9f6] text-[#0d0c0c] py-20 md:py-28 relative overflow-hidden">
+    <section id="evaluation-kit-form-section" className="relative w-full bg-[#faf9f6] text-[#0d0c0c] py-20 md:py-28 overflow-hidden">
 
       {/* Background decoration elements */}
       <div className="absolute bottom-[-10%] left-[-5%] w-[40vw] h-[40vw] bg-gradient-radial from-orange-500/5 to-transparent rounded-full blur-3xl pointer-events-none" />
 
-      <div className="container mx-auto px-6 relative">
+      <div className="frame relative">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
 
           {/* Left Column: Copy Checklist */}
           <div className="lg:col-span-6 flex flex-col items-start text-left">
-            <h2 className="font-heading font-semibold leading-[57px] tracking-[-0.02em] text-[36px] sm:text-4xl md:text-[48px] text-[#0d0c0c] mb-6">
-              Free Evaluation Kit. <br />
-              Zero Payment.
+            <h2 className="font-heading font-semibold leading-[57px] tracking-[-0.96px] text-[36px] sm:text-4xl md:text-[48px] text-[#0d0c0c] mb-6">
+              Build Your Own<br />
+              Customised TruCytes
             </h2>
             <p className="text-[#333130] font-sans text-base md:text-[18px] leading-[27px] mb-10 max-w-[520px]">
               A Field Application Scientist will reply within 2 business days with a TruCytes® sample matched to your application. No sales calls, no pressure — just science.
@@ -80,9 +76,7 @@ export default function EvaluationKitForm({ prefilledAntigens, prefilledExpressi
               ].map((item, idx) => (
                 <li key={idx} className="flex items-center gap-4 py-4 border-b border-[#E4E1DC]">
                   <div className="flex items-center justify-center w-5 h-5 rounded-full bg-[#E8F5EE] text-[#1A6B4A] shrink-0">
-                    <svg viewBox="0 0 20 20" fill="currentColor" className="w-3 h-3">
-                      <path fillRule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clipRule="evenodd" />
-                    </svg>
+                    <SmallCheckIcon className="w-3 h-3" />
                   </div>
                   <span className="text-[#555350] font-sans text-[14px] font-medium leading-[24px]">
                     {item}
@@ -100,9 +94,7 @@ export default function EvaluationKitForm({ prefilledAntigens, prefilledExpressi
               {isSuccess ? (
                 <div className="text-center py-10 animate-fade-up flex flex-col items-center">
                   <div className="w-20 h-20 bg-emerald-500/10 rounded-full flex items-center justify-center text-emerald-500 mb-6 border border-emerald-500/20 shadow-inner">
-                    <svg viewBox="0 0 24 24" fill="currentColor" className="w-10 h-10 animate-pulse">
-                      <path fillRule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.748-5.25z" clipRule="evenodd" />
-                    </svg>
+                    <PulsingCheckIcon className="w-10 h-10 animate-pulse" />
                   </div>
                   <h3 className="font-heading font-bold text-2xl text-[#0d0c0c] mb-3">
                     Request Submitted Successfully!
@@ -185,27 +177,20 @@ export default function EvaluationKitForm({ prefilledAntigens, prefilledExpressi
                     {errors.company && <p className="text-red-500 text-xs mt-1 font-sans">{errors.company}</p>}
                   </div>
 
-                  {/* Primary Application */}
+                  {/* Write a message */}
                   <div>
-                    <label className="block text-[11px] font-heading font-semibold text-[#9A9794] uppercase leading-[18px] tracking-[0.99px] mb-1.5">Primary Application</label>
+                    <label className="block text-[11px] font-heading font-semibold text-[#9A9794] uppercase leading-[18px] tracking-[0.99px] mb-1.5">Write a message</label>
                     <div className="relative">
-                      <select
+                      <textarea
                         value={primaryApplication}
                         onChange={(e) => setPrimaryApplication(e.target.value)}
-                        className={`w-full bg-white border border-[#E4E1DC] rounded-[8px] px-4 py-3  leading-[19px] font-sans focus:outline-none focus:ring-1 focus:ring-[#f76a00] cursor-pointer appearance-none selection:text-[15px] ${errors.primaryApplication ? "border-red-500 bg-red-50/20" : "border-[#dedcda]"
+                        placeholder="write a message"
+                        rows={4}
+                        className={`w-full bg-white border rounded-[8px] px-4 py-3 leading-[19px] font-sans focus:outline-none focus:ring-1 focus:ring-[#f76a00] resize-none ${errors.primaryApplication
+                          ? "border-red-500 bg-red-50/20"
+                          : "border-[#dedcda]"
                           }`}
-                      >
-                        <option value="">Select your workflow</option>
-                        <option value="flow-cytometry">Flow Cytometry Calibration</option>
-                        <option value="assay-standardization">Assay Standardisation</option>
-                        <option value="immunotherapy">Immunotherapy Research</option>
-                        <option value="other">Other Workflow</option>
-                      </select>
-                      <div className="absolute inset-y-0 right-4 flex items-center pointer-events-none text-[#78716c]">
-                        <svg viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
-                          <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
-                        </svg>
-                      </div>
+                      />
                     </div>
                     {errors.primaryApplication && <p className="text-red-500 text-xs mt-1 font-sans">{errors.primaryApplication}</p>}
                   </div>

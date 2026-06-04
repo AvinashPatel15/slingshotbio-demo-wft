@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { biologicalControlFeatures } from "../../content/custom-biomarker";
 
 export default function BiologicalControlComparison() {
   const scrollToConfigurator = (e: React.MouseEvent | React.KeyboardEvent) => {
@@ -11,76 +12,6 @@ export default function BiologicalControlComparison() {
     }
   };
 
-  const features = [
-    {
-      title: "Fully Synthetic",
-      isOrangeTitle: false,
-      description: "No donor sourcing. No IRB complexity. No cold chain dependency.",
-      icon: (
-        <svg width="42" height="48" viewBox="0 0 42 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M40.3188 12.7217V35.2773L20.7847 46.5557L1.25049 35.2773V12.7217L20.7847 1.44336L40.3188 12.7217Z" stroke="#333130" stroke-width="2.5" />
-        </svg>
-
-      )
-    },
-    {
-      title: "Custom to Specification",
-      isOrangeTitle: true,
-      description: "Any surface marker, particle size, rigidity, or assay format. Your exact panel.",
-      icon: (
-        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="1.25" y="1.25" width="45.5" height="45.5" rx="22.75" stroke="#F76A00" stroke-width="2.5" />
-          <circle cx="24.0003" cy="24.0001" r="2.32258" fill="#F76A00" />
-          <circle cx="19.7423" cy="18.9677" r="1.16129" fill="#F76A00" />
-          <circle cx="19.7423" cy="28.2582" r="1.16129" fill="#F76A00" />
-          <circle cx="28.258" cy="28.2582" r="1.16129" fill="#F76A00" />
-          <circle cx="28.258" cy="18.9677" r="1.16129" fill="#F76A00" />
-          <circle cx="14.7103" cy="24.0001" r="2.32258" fill="#F76A00" />
-          <circle cx="33.2904" cy="24.0001" r="2.32258" fill="#F76A00" />
-          <circle cx="33.2904" cy="30.9678" r="2.32258" fill="#F76A00" />
-          <circle cx="33.2904" cy="17.0322" r="2.32258" fill="#F76A00" />
-          <circle cx="14.7103" cy="17.0322" r="2.32258" fill="#F76A00" />
-          <circle cx="14.7103" cy="30.9678" r="2.32258" fill="#F76A00" />
-          <circle cx="24.0003" cy="14.7097" r="2.32258" fill="#F76A00" />
-          <circle cx="24.0003" cy="33.2903" r="2.32258" fill="#F76A00" />
-        </svg>
-
-      )
-    },
-    {
-      title: "Ambient Stable",
-      isOrangeTitle: false,
-      description: "Ships and stores without cold chain. Designed for multi-site research programmes.",
-      icon: (
-        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M26.4824 1.25L46.75 21.5176V26.4824L26.4824 46.75H21.5176L1.25 26.4824V21.5176L21.5176 1.25H26.4824Z" stroke="#333130" stroke-width="2.5" />
-        </svg>
-
-      )
-    },
-    {
-      title: "Lot Identical Performance",
-      isOrangeTitle: false,
-      description: "Every batch manufactured to the same specification. Run your gating templates unchanged.",
-      icon: (
-        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0_1_3306)">
-            <path d="M47.25 0.75H0.75V12H47.25V0.75Z" stroke="#333130" stroke-width="2.5" stroke-miterlimit="10" />
-            <path d="M47.25 12H0.75V24H47.25V12Z" stroke="#333130" stroke-width="2.5" stroke-miterlimit="10" />
-            <path d="M47.25 24H0.75V35.25H47.25V24Z" stroke="#333130" stroke-width="2.5" stroke-miterlimit="10" />
-            <path d="M47.25 35.25H0.75V47.25H47.25V35.25Z" stroke="#333130" stroke-width="2.5" stroke-miterlimit="10" />
-          </g>
-          <defs>
-            <clipPath id="clip0_1_3306">
-              <rect width="48" height="48" fill="white" />
-            </clipPath>
-          </defs>
-        </svg>
-
-      )
-    }
-  ];
-
   return (
     <section className="bg-white text-[#0d0c0c] py-20 md:py-28 relative overflow-hidden">
       <div className="container mx-auto relative">
@@ -88,7 +19,7 @@ export default function BiologicalControlComparison() {
 
           {/* Left Column: 2x2 Feature Grid (No cards, minimalist text layouts on plain background) */}
           <div className="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-12 md:gap-x-12 md:gap-y-12">
-            {features.map((feature, idx) => (
+            {biologicalControlFeatures.map((feature, idx) => (
               <div
                 key={idx}
                 className="flex flex-col items-start text-left transition-all duration-300"
