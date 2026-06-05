@@ -6,7 +6,7 @@ import ProductOverview from "./product-overview";
 import LifecycleSteps from "./lifecycle-steps";
 import ProductCapabilities from "./product-capabilities";
 import UnparalleledCustomization from "./unparalleled-customization";
-import EvaluationKitForm from "./evaluation-kit-form";
+import CustomForm from "./custom-form";
 import StickyCtaBar from "./sticky-cta-bar";
 
 export default function CustomBiomarkerClient() {
@@ -21,7 +21,7 @@ export default function CustomBiomarkerClient() {
       <LifecycleSteps />
       <ProductCapabilities />
       <UnparalleledCustomization />
-      <EvaluationKitForm />
+      <CustomForm />
       {/* <StickyCtaBar /> */}
     </main>
   );
